@@ -4,119 +4,152 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid Business</title>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/svg-with-js.min.css"
-    ></script>
-    <link rel="stylesheet" href="style.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    /> -->
+
+    <!-- Style Import -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/navbar-mobile.css" />
+    <link rel="stylesheet" href="style/text.css" />
+    <link rel="stylesheet" href="style/button.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/style-mobile.css" />
+
+    <title>Xuan Loan | Fashion Clothing Fabrics</title>
   </head>
   <body>
-    <div class="wrapper">
-      <!-- Navigation -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
+    <!-- Nav Bar -->
+
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="navbar-brand">
+          <a href="index.html">
+            <img src="image\Xuan Loan logo.jpg" alt="logo" />
+          </a>
+        </div>
+
+        <ul class="navbar-nav-left">
+          <li><a href="#">Products</a></li>
           <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">Address / Phone</a></li>
         </ul>
-      </nav>
 
-      <!-- Membership -->
-      <section class="top-container">
-        <header class="showcase">
-          <h1>Business</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, velit
-            aspernatur iste debitis ea asperiores.
-          </p>
-          <a href="#" class="btn">Read More</a>
-        </header>
-        <div class="top-box top-box-a">
-          <h4>Membership</h4>
-          <p class="price">$100 / Month</p>
-          <a href="" class="btn">Buy Now</a>
-        </div>
-        <div class="top-box top-box-b">
-          <h4>Pro Membership</h4>
-          <p class="price">$200 / Month</p>
-          <a href="" class="btn">Buy Now</a>
-        </div>
-      </section>
+        <ul class="navbar-nav-right">
+          <li>
+            <a
+              href="https://goo.gl/maps/CsAcSdMbtndnW4CFA"
+              class="btn btn-dark-outline"
+              target="_blank"
+              >Navigate to Store</a
+            >
+          </li>
 
-      <!-- Box -->
-      <section class="boxes">
-        <div class="box">
-          <i class="fa-solid fa-chart-pie fa-4x"></i>
-          <h3>Analytics</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, soluta!
-          </p>
-        </div>
+          <li>
+            <a href="tel:7148917856" class="btn btn-primary" target="_blank">
+              Call Now
+            </a>
+          </li>
+        </ul>
 
-        <div class="box">
-          <i class="fa-solid fa-globe fa-4x"></i>
-          <h3>Marketing</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, soluta!
-          </p>
-        </div>
+        <!-- Mobile Nav Bar -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
+      </div>
+    </nav>
 
-        <div class="box">
-          <i class="fa-solid fa-cog fa-4x"></i>
-          <h3>Development</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, soluta!
-          </p>
-        </div>
-
-        <div class="box">
-          <i class="fa-solid fa-user fa-4x"></i>
-          <h3>Support</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. In, soluta!
-          </p>
-        </div>
-      </section>
-
-      <!-- Info -->
-      <section class="info">
-        <img
-          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtB6_sepbFwJgY5mzwr5CjdbV7BfoHCsjJuQ&usqp=CAU"
-          alt="Cat"
-        />
-        <div>
-          <h2>Your Business Online</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati
-            quidem facilis voluptate vero animi laboriosam, esse quae veniam
-            quia quibusdam. Voluptates facere odio adipisci doloribus temporibus
-            unde voluptatum magnam dolores.
-          </p>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-      </section>
-
-      <!-- Portfolio -->
-      <section class="portfolio">
-        <img src="http://source.unsplash.com/random/200x200" alt="" />
-        <img src="http://source.unsplash.com/random/201x200" alt="" />
-        <img src="http://source.unsplash.com/random/202x200" alt="" />
-        <img src="http://source.unsplash.com/random/203x200" alt="" />
-        <img src="http://source.unsplash.com/random/204x200" alt="" />
-        <img src="http://source.unsplash.com/random/205x200" alt="" />
-        <img src="http://source.unsplash.com/random/206x200" alt="" />
-        <img src="http://source.unsplash.com/random/207x200" alt="" />
-        <img src="http://source.unsplash.com/random/208x200" alt="" />
-      </section>
-
-      <!-- Footer -->
-      <footer><p>Your Business &copy;</p></footer>
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Address / Phone</a></li>
+      </ul>
+      <div class="mobile-menu-bottom">
+        <a
+          href="https://goo.gl/maps/CsAcSdMbtndnW4CFA"
+          target="_blank"
+          class="btn btn-dark-outline"
+        >
+          Navigate to Store
+        </a>
+        <a href="tel:7148917856" target="_blank" class="btn btn-primary"
+          >Call Now</a
+        >
+      </div>
     </div>
+
+    <!-- Body -->
+
+    <!-- Box A -->
+    <section class="box box-a bg-primary text-center grid-col-2">
+      <img
+        src="https://images.pexels.com/photos/1308881/pexels-photo-1308881.jpeg"
+        alt="Ao Dai"
+      />
+      <div class="box-text">
+        <h2 class="text-lg">Custom Tailored Ao Dai</h2>
+        <p class="text-md">
+          Look your best for traditional holidays and weddings.
+        </p>
+        <button class="btn btn-light-outline">Call Now</button>
+      </div>
+    </section>
+
+    <!-- Box B -->
+    <section
+      class="box box-b bg-secondary text-center grid-col-2 grid-reversed"
+    >
+      <img
+        src="https://images.pexels.com/photos/899753/pexels-photo-899753.jpeg"
+        alt="Ao Dai"
+      />
+      <div class="box-text">
+        <h2 class="text-lg">Satin, Cathay, Velvet ...</h2>
+        <p class="text-md">
+          Variety of fabrics where you can create or your dress, clothing,
+          tableclothes, etc.
+        </p>
+        <button class="btn btn-light-outline">Call Now</button>
+      </div>
+    </section>
+
+    <!-- Box C -->
+    <section class="box box-c bg-primary text-center grid-col-2">
+      <img
+        src="https://images.pexels.com/photos/1789925/pexels-photo-1789925.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Ao Dai"
+      />
+      <div class="box-text">
+        <h2 class="text-lg">Perfect for Tet, Autumn Festival</h2>
+        <p class="text-md">Actually perfect for any season.</p>
+        <button class="btn btn-light-outline">Call Now</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="social">
+          <a href="https://instagram.com/xuanloanfabrics" target="_blank"
+            ><img
+              src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png"
+              alt="Instagram"
+          /></a>
+        </div>
+        <p class="text-center">
+          Copyright
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          . All rights Reserved
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

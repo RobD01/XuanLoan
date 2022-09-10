@@ -1,0 +1,38 @@
+/* Button */
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 0.1rem black solid;
+  border-radius: 2rem;
+  padding: 0.5rem 1rem;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-2);
+}
+
+.btn-dark-outline:hover {
+  box-shadow: var(--shadow);
+}
+
+.btn-light-outline {
+  color: white;
+  border: white 1px solid;
+  margin: 1rem;
+}
+
+.btn-light-outline:hover {
+  color: white;
+  border: white 1px solid;
+  background-color: var(--color-primary-2);
+}

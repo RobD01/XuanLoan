@@ -1,0 +1,52 @@
+/* Media Query for Mobile Devices */
+
+@media (max-width: 800px) {
+  .grid-col-2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .grid-reversed:first-child {
+    order: 0;
+  }
+
+  .navbar .navbar-nav-right,
+  .navbar .navbar-nav-left {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .social img {
+    width: 4rem;
+    height: auto;
+  }
+
+  .navbar-brand img {
+    width: 3rem;
+    height: auto;
+  }
+}
+
+@media (max-width: 960px) {
+  .text-xl {
+    font-size: 1.8rem;
+  }
+
+  .text-lg {
+    font-size: 1.2rem;
+  }
+
+  .text-md {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
