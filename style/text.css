@@ -20,3 +20,9 @@
   font-size: 1rem;
   padding: 0.8rem;
 }
+
+.title {
+  text-align: center;
+  color: var(--color-secondary);
+  padding: 1.5rem;
+}
