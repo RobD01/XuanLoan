@@ -6,7 +6,7 @@ import Col from "react-bootstrap/Col";
 // import "../style/font.css";
 import Navigation from "../components/Navbar";
 
-// Title
+// Styles
 
 const titleImageUrl =
   "https://images.pexels.com/photos/1789925/pexels-photo-1789925.jpeg?auto=compress&cs=tinysrgb&w=600";
@@ -40,12 +40,10 @@ const Titletext = {
   fontSize: "5vw",
 };
 
-// Body
-
 const address = {
   // backgroundColor: "rgb(0,0,0)" /* Fallback color */,
-  backgroundColor: "rgba(50,0,13, 0.7)" /* Black w/opacity/see-through */,
-  color: "white",
+  background: "linear-gradient(0.15turn, #e1eec3, #f05053)",
+  // color: "white",
   // fontWeight: "bold",
   border: "3px solid #f1f1f1",
   // position: "absolute",
@@ -59,10 +57,49 @@ const address = {
   fontSize: "2rem",
 };
 
+const gridText = {
+  background: "linear-gradient(0.15turn, #ff9966,#ff5e62)",
+  // color: "white",
+  // fontWeight: "bold",
+  border: "3px solid #f1f1f1",
+  textAlign: "center",
+  fontSize: "2rem",
+  height: "200px",
+  padding: "2%",
+  marginTop: "0.5rem",
+  marginBottom: "1rem",
+};
+
+// Grid
+
+// Images
 const grid1 = [
-  "https://images.pexels.com/photos/15587185/pexels-photo-15587185.jpeg?auto=compress&cs=tinysrgb&w=600",
-  "https://images.pexels.com/photos/15570650/pexels-photo-15570650.jpeg?auto=compress&cs=tinysrgb&w=600",
-  "https://images.pexels.com/photos/15587226/pexels-photo-15587226.jpeg?auto=compress&cs=tinysrgb&w=600",
+  [
+    "https://images.pexels.com/photos/15587185/pexels-photo-15587185.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "Áo dài may sẵn. Quần tay may sẵn",
+  ],
+  [
+    "https://images.pexels.com/photos/15570650/pexels-photo-15570650.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "Tắt cả âu phục",
+  ],
+  [
+    "https://images.pexels.com/photos/15587226/pexels-photo-15587226.jpeg?auto=compress&cs=tinysrgb&w=600",
+    "Nam và Nữ",
+  ],
+];
+
+// Text
+// const grid2 = [
+//   "Áo dài may sẵn. Quần tay may sẵn",
+//   "Tắt cả âu phục",
+//   "Nam và Nữ",
+// ];
+
+const grid3 = [
+  "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông",
+  "Vãi may áo dài",
+  "Vãi may đồ Vest",
+  "Vãi may quần tay",
 ];
 
 const Home = () => {
@@ -85,18 +122,24 @@ const Home = () => {
         <p> 714-891-7856</p>
       </div>
 
-      {/* Grid 1 */}
+      {/* Grid 1, images */}
       <Container fluid="md" className="mt-4">
         <Row>
           {grid1.map((item) => (
             <Col key={item} xs={12} md={4}>
-              <img src={item} alt={item} width="100%" />
-              <p className="fs-5">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia
-                molestias ipsum aut blanditiis quisquam delectus, nostrum odit
-                numquam cum odio vero id repudiandae quas nulla dolores totam ut
-                consequatur ducimus.
-              </p>
+              <img src={item[0]} alt={item} width="100%" />
+              <p style={gridText}>{item[1]}</p>
+            </Col>
+          ))}
+        </Row>
+      </Container>
+
+      {/* Grid 3, text */}
+      <Container fluid="md" className="mt-4">
+        <Row>
+          {grid3.map((item) => (
+            <Col key={item} xs={12} md={4} style={gridText}>
+              <p>{item}</p>
             </Col>
           ))}
         </Row>
