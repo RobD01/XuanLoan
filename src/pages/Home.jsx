@@ -4,63 +4,10 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
+import "../style/main.css";
 import Navigation from "../components/Navbar";
 
-// Styles
-
-const titleImageUrl =
-  "https://images.pexels.com/photos/1789925/pexels-photo-1789925.jpeg?auto=compress&cs=tinysrgb&w=600";
-
-const titleImage = {
-  backgroundImage: `url(${titleImageUrl})`,
-  backgroundColor: "coral",
-  width: "100%",
-  height: "300px",
-  backgroundPosition: "center",
-  backgroundRepeat: "no-repeat",
-  backgroundSize: "cover",
-  filter: "blur(2px)",
-  // -webkit-filter: blur(8px);
-};
-
-const Titletext = {
-  backgroundColor: "rgba(0,0,0, 0.4)" /* Black w/opacity/see-through */,
-  color: "white",
-  fontWeight: "bold",
-  border: "3px solid #f1f1f1",
-  position: "relative",
-  transform: "translate(50%, -150%)",
-  width: "50%",
-  padding: "20px",
-  textAlign: "center",
-  fontSize: "5vw",
-  fontFamily: "Tangerine",
-};
-
-const gridHeight = "300px";
-
-const address = {
-  backgroundColor: "rgba(150,150,150, 0.1)" /* Black w/opacity/see-through */,
-  border: "3px solid #f1f1f1",
-  paddingTop: "10%",
-  textAlign: "center",
-  fontSize: "1.5rem",
-  height: gridHeight,
-};
-
-const gridText = {
-  // background: "linear-gradient(0.15turn, #ff9966,#ff5e62)",
-  backgroundColor: "rgba(150,150,150, 0.1)" /* Black w/opacity/see-through */,
-  // color: "white",
-  // fontWeight: "bold",
-  border: "3px solid #f1f1f1",
-  textAlign: "center",
-  fontSize: "1.5rem",
-  height: "150px",
-  padding: "2%",
-  marginTop: "0.5rem",
-  marginBottom: "1rem",
-};
+const gridHeight = "250px";
 
 // Grid
 
@@ -80,14 +27,16 @@ const grid1 = [
   ],
 ];
 
-// Text
-// const grid2 = [
-//   "Áo dài may sẵn. Quần tay may sẵn",
-//   "Tắt cả âu phục",
-//   "Nam và Nữ",
-// ];
-
-const grid3 = ["", "", "", ""];
+const socialLink = [
+  [
+    "https://cdn-icons-png.flaticon.com/512/1384/1384060.png",
+    "https://www.youtube.com/watch?v=aWIRSRMmdN0",
+  ],
+  [
+    "https://png.pngtree.com/png-vector/20221018/ourmid/pngtree-instagram-icon-png-image_6315974.png",
+    "https://www.instagram.com/xuanloanfabrics/",
+  ],
+];
 
 const Home = () => {
   return (
@@ -96,8 +45,8 @@ const Home = () => {
 
       {/* Title */}
 
-      <div style={titleImage}></div>
-      <h2 style={Titletext}>XL Fashion</h2>
+      <div className="titleImage"></div>
+      <h2 className="titleText">XL Fashion</h2>
 
       {/* Body */}
 
@@ -106,7 +55,7 @@ const Home = () => {
       <Container fluid="md">
         <Row>
           <Col xs={12} md={6}>
-            <div style={address}>
+            <div className="address">
               <p> Westland Plaza</p>
               <p> 8560 Wesminster Blvd, Westminster, CA</p>
               <p> 714-891-7856</p>
@@ -131,23 +80,26 @@ const Home = () => {
         <Row>
           {grid1.map((item) => (
             <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} width="100%" />
-              <p style={gridText}>{item[1]}</p>
+              <img src={item[0]} alt={item} className="gridImage" />
+              <p className="gridText">{item[1]}</p>
             </Col>
           ))}
         </Row>
       </Container>
 
-      {/* Grid 3, text */}
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {grid3.map((item) => (
-            <Col key={item} xs={12} md={4} style={gridText}>
-              <p>{item}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      {/* social media */}
+      <div class="d-flex justify-content-center">
+        {socialLink.map((item) => (
+          <a
+            href={item[1]}
+            target="_blank"
+            rel="noreferrer"
+            className="flexItem"
+          >
+            <img src={item[0]} alt={item} width="100%" />
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
