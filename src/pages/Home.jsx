@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 // import "bootstrap/dist/css/bootstrap.min.css";
-// import "../style/font.css";
+import "../style/font.css";
 import Navigation from "../components/Navbar";
 
 // Styles
@@ -24,47 +24,39 @@ const titleImage = {
 };
 
 const Titletext = {
-  // backgroundColor: "rgb(0,0,0)" /* Fallback color */,
   backgroundColor: "rgba(0,0,0, 0.4)" /* Black w/opacity/see-through */,
   color: "white",
-  // fontWeight: "bold",
+  fontWeight: "bold",
   border: "3px solid #f1f1f1",
   position: "relative",
-  // top: "50%",
-  // left: "50%",
   transform: "translate(50%, -150%)",
-  zIndex: "2",
   width: "50%",
   padding: "20px",
   textAlign: "center",
   fontSize: "5vw",
+  fontFamily: "Tangerine",
 };
 
+const gridHeight = "300px";
+
 const address = {
-  // backgroundColor: "rgb(0,0,0)" /* Fallback color */,
-  background: "linear-gradient(0.15turn, #e1eec3, #f05053)",
-  // color: "white",
-  // fontWeight: "bold",
+  backgroundColor: "rgba(150,150,150, 0.1)" /* Black w/opacity/see-through */,
   border: "3px solid #f1f1f1",
-  // position: "absolute",
-  // top: "50%",
-  // left: "50%",
-  // transform: "translate(-50%, -100%)",
-  // zIndex: "2",
-  // width: 80%;
-  padding: "1%",
+  paddingTop: "10%",
   textAlign: "center",
-  fontSize: "2rem",
+  fontSize: "1.5rem",
+  height: gridHeight,
 };
 
 const gridText = {
-  background: "linear-gradient(0.15turn, #ff9966,#ff5e62)",
+  // background: "linear-gradient(0.15turn, #ff9966,#ff5e62)",
+  backgroundColor: "rgba(150,150,150, 0.1)" /* Black w/opacity/see-through */,
   // color: "white",
   // fontWeight: "bold",
   border: "3px solid #f1f1f1",
   textAlign: "center",
-  fontSize: "2rem",
-  height: "200px",
+  fontSize: "1.5rem",
+  height: "150px",
   padding: "2%",
   marginTop: "0.5rem",
   marginBottom: "1rem",
@@ -76,15 +68,15 @@ const gridText = {
 const grid1 = [
   [
     "https://images.pexels.com/photos/15587185/pexels-photo-15587185.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Áo dài may sẵn. Quần tay may sẵn",
+    "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
   ],
   [
     "https://images.pexels.com/photos/15570650/pexels-photo-15570650.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Tắt cả âu phục",
+    "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài",
   ],
   [
     "https://images.pexels.com/photos/15587226/pexels-photo-15587226.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Nam và Nữ",
+    "Vãi may đồ Vest. Vãi may quần tay",
   ],
 ];
 
@@ -95,12 +87,7 @@ const grid1 = [
 //   "Nam và Nữ",
 // ];
 
-const grid3 = [
-  "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông",
-  "Vãi may áo dài",
-  "Vãi may đồ Vest",
-  "Vãi may quần tay",
-];
+const grid3 = ["", "", "", ""];
 
 const Home = () => {
   return (
@@ -116,11 +103,28 @@ const Home = () => {
 
       {/* Address, Phone */}
 
-      <div style={address}>
-        <p> Westland Plaza</p>
-        <p> 8560 Wesminster Blvd, Westminster, CA</p>
-        <p> 714-891-7856</p>
-      </div>
+      <Container fluid="md">
+        <Row>
+          <Col xs={12} md={6}>
+            <div style={address}>
+              <p> Westland Plaza</p>
+              <p> 8560 Wesminster Blvd, Westminster, CA</p>
+              <p> 714-891-7856</p>
+            </div>
+          </Col>
+          <Col xs={12} md={6}>
+            <iframe
+              width="100%"
+              height={gridHeight}
+              src="https://www.youtube.com/embed/aWIRSRMmdN0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </Col>
+        </Row>
+      </Container>
 
       {/* Grid 1, images */}
       <Container fluid="md" className="mt-4">
