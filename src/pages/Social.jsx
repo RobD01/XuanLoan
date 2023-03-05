@@ -1,9 +1,8 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
@@ -43,8 +42,20 @@ const Fashion = () => {
       <div className="mt-5">
         <h5>
           Submit your photos for a chance to be featured on our Instagram and
-          website! Please submission form below:
+          website! Please complete form below:
         </h5>
+
+        <iframe
+          title="Social Media Submission"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSd-8zhMg17CHMGTNpcqu9oDk5QfUdUqCtK17OLL9YCV8flTzQ/viewform?embedded=true"
+          width="1000"
+          height="1000"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+        >
+          Loading…
+        </iframe>
       </div>
     </div>
   );
