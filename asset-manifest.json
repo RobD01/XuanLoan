@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/XuanLoan/static/css/main.378889e5.css",
-    "main.js": "/XuanLoan/static/js/main.24e3ec57.js",
+    "main.js": "/XuanLoan/static/js/main.147db8ba.js",
     "static/js/787.4224ee91.chunk.js": "/XuanLoan/static/js/787.4224ee91.chunk.js",
     "index.html": "/XuanLoan/index.html",
     "main.378889e5.css.map": "/XuanLoan/static/css/main.378889e5.css.map",
-    "main.24e3ec57.js.map": "/XuanLoan/static/js/main.24e3ec57.js.map",
+    "main.147db8ba.js.map": "/XuanLoan/static/js/main.147db8ba.js.map",
     "787.4224ee91.chunk.js.map": "/XuanLoan/static/js/787.4224ee91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.378889e5.css",
-    "static/js/main.24e3ec57.js"
+    "static/js/main.147db8ba.js"
   ]
 }
