@@ -63,6 +63,7 @@ const Home = () => {
           </Col>
           <Col xs={12} md={6}>
             <iframe
+              className="gridImage"
               width="100%"
               height={gridHeight}
               src="https://www.youtube.com/embed/aWIRSRMmdN0"
