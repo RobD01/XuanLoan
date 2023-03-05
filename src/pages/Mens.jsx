@@ -1,10 +1,7 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import ItemGrid from "../components/ItemGrid";
 import "../style/font.css";
 import "../style/main.css";
 
@@ -32,17 +29,7 @@ const Mens = () => {
       <h2 className="text-center">Mens Fashion</h2>
 
       {/* Mens Suits */}
-      <h4 className="text-center mt-5">Mens Suits</h4>
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {menSuit.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
-              <p className="gridText">{item[1]}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ItemGrid title="Mens Suit" list={menSuit} />
     </div>
   );
 };

@@ -1,17 +1,14 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import ItemGrid from "../components/ItemGrid";
 import "../style/font.css";
 import "../style/main.css";
 
 const Kids = () => {
   // Images
 
-  const kidsAoDai = [
+  const aoDai = [
     [
       "https://images.pexels.com/photos/6747293/pexels-photo-6747293.jpeg?auto=compress&cs=tinysrgb&w=600",
       "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
@@ -32,17 +29,7 @@ const Kids = () => {
       <h2 className="text-center">Kids</h2>
 
       {/* Ao Dai */}
-      <h4 className="text-center mt-5">Ao Dai</h4>
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {kidsAoDai.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
-              <p className="gridText">{item[1]}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ItemGrid title="Ao Dai" list={aoDai} />
     </div>
   );
 };

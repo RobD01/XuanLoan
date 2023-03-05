@@ -48,11 +48,12 @@ const Fashion = () => {
         <iframe
           title="Social Media Submission"
           src="https://docs.google.com/forms/d/e/1FAIpQLSd-8zhMg17CHMGTNpcqu9oDk5QfUdUqCtK17OLL9YCV8flTzQ/viewform?embedded=true"
-          width="1000"
-          height="1000"
+          width="100%"
+          height="1100"
           frameborder="0"
           marginheight="0"
           marginwidth="0"
+          onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}'
         >
           Loading…
         </iframe>

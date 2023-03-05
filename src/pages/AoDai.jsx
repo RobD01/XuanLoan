@@ -2,9 +2,7 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import ItemGrid from "../components/ItemGrid";
 import "../style/font.css";
 import "../style/main.css";
 
@@ -46,31 +44,10 @@ const AoDai = () => {
       <h2 className="text-center">Fashion</h2>
 
       {/* Ao Dai */}
-      <div></div>
-      <h4 className="text-center mt-5">Ao Dai</h4>
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {aoDai.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
-              <p className="gridText">{item[1]}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ItemGrid title="Ao Dai" list={aoDai} />
 
       {/* Sunglasses */}
-      <h4 className="text-center mt-5">Sunglasses</h4>
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {sunglasses.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
-              <p className="gridText">{item[1]}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ItemGrid title="Sunglasses" list={sunglasses} />
     </div>
   );
 };
