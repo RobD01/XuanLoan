@@ -41,7 +41,7 @@ const AoDai = () => {
   return (
     <div className="container">
       <Navigation />
-      <h2 className="text-center">Fashion</h2>
+      <h2 className="text-center">Women's Fashion</h2>
 
       {/* Ao Dai */}
       <ItemGrid title="Ao Dai" list={aoDai} />

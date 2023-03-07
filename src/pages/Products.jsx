@@ -21,14 +21,6 @@ const Products = () => {
       "https://i5.walmartimages.com/asr/10e7ac54-034a-4d23-8091-ebed9d13b6c0.5a678cd7e36190797a0621dc66b67d4a.jpeg",
       "Vãi may đồ Vest. Vãi may quần tay",
     ],
-    [
-      "https://m.media-amazon.com/images/I/81X1biOsyAL.jpg",
-      "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
-    ],
-    [
-      "https://cdn.shopify.com/s/files/1/0071/9663/9302/collections/yezi-tea-raw-yunnan-puerh-cake-with-knife_1024x1024_b21d73a9-a0ee-4b48-9b67-5e81d3f15c9d_1600x.jpg?v=1554701325",
-      "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài",
-    ],
   ];
 
   const hair = [

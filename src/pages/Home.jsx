@@ -15,15 +15,20 @@ const gridHeight = "250px";
 const grid1 = [
   [
     "https://images.pexels.com/photos/15587185/pexels-photo-15587185.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
+    "Áo dài may sẵn. Quần tây may sẵn. Tắt cả âu phục Nam và Nữ. Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài. Vãi may đồ Vest. Vãi may quần tay",
   ],
   [
     "https://images.pexels.com/photos/15570650/pexels-photo-15570650.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài",
+    `Quality fabrics and stylish clothing perfect
+     for creating a casual or traditional look! Our 
+     selection includes Ao Dai, Velvet, Cathay, Cotton, Polyester, and more.`,
   ],
   [
-    "https://images.pexels.com/photos/15587226/pexels-photo-15587226.jpeg?auto=compress&cs=tinysrgb&w=600",
-    "Vãi may đồ Vest. Vãi may quần tay",
+    "https://images.pexels.com/photos/5520327/pexels-photo-5520327.jpeg?auto=compress&cs=tinysrgb&w=600",
+    `High-quality men's suits for all occasions. 
+    Attending a wedding, an important job interview, 
+    we've got you covered. Different colors and styles 
+    to match your personal taste and style.`,
   ],
 ];
 
