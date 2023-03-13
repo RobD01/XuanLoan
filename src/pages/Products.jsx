@@ -11,7 +11,7 @@ const Products = () => {
   const misc = [
     [
       "https://m.media-amazon.com/images/I/81X1biOsyAL.jpg",
-      "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
+      "Green Oil : Eagle Brand",
     ],
     [
       "https://cdn.shopify.com/s/files/1/0071/9663/9302/collections/yezi-tea-raw-yunnan-puerh-cake-with-knife_1024x1024_b21d73a9-a0ee-4b48-9b67-5e81d3f15c9d_1600x.jpg?v=1554701325",
@@ -25,16 +25,24 @@ const Products = () => {
 
   const hair = [
     [
-      "https://images.pexels.com/photos/3735657/pexels-photo-3735657.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
+      "https://loverscare.com/img/L/LOVERCARE-Shower-Cream-ROSEHIP.jpg",
+      `Lovercare Shower Cream`,
     ],
     [
-      "https://images.pexels.com/photos/4498317/pexels-photo-4498317.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài",
+      "https://i5.walmartimages.com/asr/36219979-091b-4d06-81a0-1604b1cfcc7a.58f484eec7c1f40c0d11c81331b22374.jpeg?odnHeight=2000&odnWidth=2000&odnBg=FFFFFF",
+      "Lovercare Body Lotion",
     ],
     [
-      "https://images.pexels.com/photos/13720328/pexels-photo-13720328.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Vãi may đồ Vest. Vãi may quần tay",
+      "https://loverscare.com/img/L/c40.png",
+      "Lovers Hair Colouring Shampoo: 1 : Natural Black",
+    ],
+    [
+      "https://loverscare.com/img/L/c41.png",
+      "Lovers Hair Colouring Shampoo: 3 : Dark Brown",
+    ],
+    [
+      "https://loverscare.com/img/L/c38.png",
+      "Lovers Hair Colouring Shampoo: 4.5 : Chestnut Brown",
     ],
   ];
 
