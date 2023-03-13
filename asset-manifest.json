@@ -1,15 +1,22 @@
 {
   "files": {
     "main.css": "/XuanLoan/static/css/main.2c6a7700.css",
-    "main.js": "/XuanLoan/static/js/main.c7de24f5.js",
+    "main.js": "/XuanLoan/static/js/main.b71da7d6.js",
     "static/js/787.4224ee91.chunk.js": "/XuanLoan/static/js/787.4224ee91.chunk.js",
+    "static/media/6.jpg": "/XuanLoan/static/media/6.d23aad1fcea68192a5f2.jpg",
+    "static/media/4.jpg": "/XuanLoan/static/media/4.0024e35ccfd791fc358b.jpg",
+    "static/media/1.jpg": "/XuanLoan/static/media/1.436b613bd45e2a8b1f8b.jpg",
+    "static/media/5.jpg": "/XuanLoan/static/media/5.1ebee9f8412d2d11ec10.jpg",
+    "static/media/3.jpg": "/XuanLoan/static/media/3.ac849fc442a417164bb7.jpg",
+    "static/media/7.jpg": "/XuanLoan/static/media/7.43634f6d695e46a3a865.jpg",
+    "static/media/2.jpg": "/XuanLoan/static/media/2.33a1e6729247c942a233.jpg",
     "index.html": "/XuanLoan/index.html",
     "main.2c6a7700.css.map": "/XuanLoan/static/css/main.2c6a7700.css.map",
-    "main.c7de24f5.js.map": "/XuanLoan/static/js/main.c7de24f5.js.map",
+    "main.b71da7d6.js.map": "/XuanLoan/static/js/main.b71da7d6.js.map",
     "787.4224ee91.chunk.js.map": "/XuanLoan/static/js/787.4224ee91.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2c6a7700.css",
-    "static/js/main.c7de24f5.js"
+    "static/js/main.b71da7d6.js"
   ]
 }
