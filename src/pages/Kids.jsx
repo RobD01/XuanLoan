@@ -5,6 +5,11 @@ import ItemGrid from "../components/ItemGrid";
 import "../style/font.css";
 import "../style/main.css";
 
+// images
+// kids blanket
+import image29 from "../images/kids-blanket/29.jpg";
+import image30 from "../images/kids-blanket/30.jpg";
+
 const Kids = () => {
   // Images
 
@@ -23,6 +28,8 @@ const Kids = () => {
     ],
   ];
 
+  const kidsBlanket = [[image29], [image30]];
+
   return (
     <div className="container">
       <Navigation />
@@ -30,6 +37,7 @@ const Kids = () => {
 
       {/* Ao Dai */}
       <ItemGrid title="Ao Dai" list={aoDai} />
+      <ItemGrid title="Kids Blankets" list={kidsBlanket} />
     </div>
   );
 };

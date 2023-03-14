@@ -6,30 +6,50 @@ import ItemGrid from "../components/ItemGrid";
 import "../style/font.css";
 import "../style/main.css";
 
+// images : Fabrics
+import image4 from "../images/fabrics/4.jpg";
+import image19 from "../images/fabrics/19.jpg";
+import image23 from "../images/fabrics/23.jpg";
+import image24 from "../images/fabrics/24.jpg";
+import image25 from "../images/fabrics/25.jpg";
+import image32 from "../images/fabrics/32.jpg";
+import image33 from "../images/fabrics/33.jpg";
+import image34 from "../images/fabrics/34.jpg";
+
+// images : Fabrics Ao Dai
+
+import image5 from "../images/fabrics-ao-dai/5.jpg";
+import image6 from "../images/fabrics-ao-dai/6.jpg";
+import image7 from "../images/fabrics-ao-dai/7.jpg";
+import image8 from "../images/fabrics-ao-dai/8.jpg";
+import image9 from "../images/fabrics-ao-dai/9.jpg";
+
 const Fabrics = () => {
   // Images
   const fabrics = [
-    [
-      "https://images.pexels.com/photos/1487834/pexels-photo-1487834.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Áo dài may sẵn. Quần tay may sẵn. Tắt cả âu phục Nam và Nữ",
-    ],
-    [
-      "https://images.pexels.com/photos/6765060/pexels-photo-6765060.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài",
-    ],
-    [
-      "https://images.pexels.com/photos/459486/pexels-photo-459486.jpeg?auto=compress&cs=tinysrgb&w=600",
-      "Vãi may đồ Vest. Vãi may quần tay",
-    ],
+    [image4],
+    [image19],
+    [image23],
+    [image23],
+    [image24],
+    [image25],
+    [image32],
+    [image33],
+    [image34],
   ];
+
+  const fabricsAoDai = [[image5], [image6], [image7], [image8], [image9]];
 
   return (
     <div className="container">
       <Navigation />
       <h2 className="text-center">Fabrics</h2>
 
+      {/* Fabrics Ao Dai*/}
+      <ItemGrid title="Fabrics For Ao Dai" list={fabricsAoDai} />
+
       {/* Fabrics */}
-      <ItemGrid list={fabrics} />
+      <ItemGrid title="Fabrics by the Yard" list={fabrics} />
     </div>
   );
 };
