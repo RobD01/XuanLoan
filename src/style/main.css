@@ -4,12 +4,13 @@
   --titleImageUrl: url("https://images.pexels.com/photos/1789925/pexels-photo-1789925.jpeg?auto=compress&cs=tinysrgb&w=600");
   --gridHeight: 250px;
   --shadow: 0 3px 10px rgba(104, 104, 104, 0.3);
+  --gridColor: #fde2e4;
 }
 
 /* Main Styles */
 
 .address {
-  background-color: rgba(200, 200, 200, 0.1);
+  background-color: var(--gridColor);
   /* border: 3px solid #f1f1f1; */
   padding-top: 10%;
   text-align: center;
@@ -19,8 +20,7 @@
 }
 
 .gridText {
-  background-color: rgba(200, 200, 200, 0.1);
-  /* border: 3px solid #f1f1f1; */
+  background-color: var(--gridColor);
   text-align: center;
   font-size: 1.5rem;
   padding: 2%;
@@ -64,7 +64,6 @@
   width: 5rem;
   height: auto;
   margin: 1rem;
-  box-shadow: var(--shadow);
 }
 
 .flexItem img:hover {
@@ -84,4 +83,9 @@
   background-size: cover;
   filter: blur(2px);
   background-image: var(--titleImageUrl);
+}
+
+.navStyle {
+  background-color: #fcd5ce;
+  box-shadow: var(--shadow);
 }

@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const Navigation = () => {
   return (
     <>
-      <Navbar bg="light" expand="lg" className="mt-1 mb-4 mx-auto">
+      <Navbar sticky="top" expand="lg" className="mt-1 mb-4 mx-auto navStyle">
         <Container>
           <Navbar.Brand href="#">XL Fashion</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />

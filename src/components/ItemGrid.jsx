@@ -2,6 +2,8 @@ import React from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Container from "react-bootstrap/Container";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const ItemGrid = (props) => {
   return (
@@ -11,7 +13,12 @@ const ItemGrid = (props) => {
         <Row>
           {props.list.map((item) => (
             <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
+              <LazyLoadImage
+                src={item[0]}
+                alt={item}
+                className="gridImage"
+                effect="blur"
+              />
               <p className="gridText">{item[1]}</p>
             </Col>
           ))}
