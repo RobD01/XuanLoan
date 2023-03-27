@@ -2,22 +2,23 @@ import React from "react";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
 import Navigation from "../components/Navbar";
+import ItemGrid from "../components/ItemGrid";
 
 // images
 import image3 from "../images/ao-dai/3.jpg";
 import image5 from "../images/ao-dai/5.jpg";
 import image7 from "../images/ao-dai/7.jpg";
+import suit3 from "../images/mens-suit/3.jpg";
 
 const gridHeight = "250px";
 
 // Grid
 
 // Images
-const grid1 = [
+const body = [
   [
     image3,
     "Áo dài may sẵn. Quần tây may sẵn. Tắt cả âu phục Nam và Nữ. Đầy đũ vãi may quần áo Đàn Ba và Đàn Ông. Vãi may áo dài. Vãi may đồ Vest. Vãi may quần tay",
@@ -29,7 +30,7 @@ const grid1 = [
      selection includes Ao Dai, Velvet, Cathay, Cotton, Polyester, and more.`,
   ],
   [
-    "https://images.pexels.com/photos/5520289/pexels-photo-5520289.jpeg?auto=compress&cs=tinysrgb&w=600",
+    suit3,
     `High-quality men's suits for all occasions. 
     Attending a wedding, an important job interview, 
     we've got you covered. Different colors and styles 
@@ -87,16 +88,7 @@ const Home = () => {
       </Container>
 
       {/* Grid 1, images */}
-      <Container fluid="md" className="mt-4">
-        <Row>
-          {grid1.map((item) => (
-            <Col key={item} xs={12} md={4}>
-              <img src={item[0]} alt={item} className="gridImage" />
-              <p className="gridText">{item[1]}</p>
-            </Col>
-          ))}
-        </Row>
-      </Container>
+      <ItemGrid list={body} />
 
       {/* social media */}
       <div class="d-flex justify-content-center">

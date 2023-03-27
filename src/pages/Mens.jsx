@@ -12,20 +12,23 @@ import image11 from "../images/mens-ao-dai/11.jpg";
 import image12 from "../images/mens-ao-dai/12.jpg";
 import image13 from "../images/mens-ao-dai/13.jpg";
 
+// Mens Suit
+import suit1 from "../images/mens-suit/1.jpg";
+import suit2 from "../images/mens-suit/2.jpg";
+import suit3 from "../images/mens-suit/3.jpg";
+import suit4 from "../images/mens-suit/4.jpg";
+import suit5 from "../images/mens-suit/5.jpg";
+import suit6 from "../images/mens-suit/6.jpg";
+import suit7 from "../images/mens-suit/7.jpg";
+import suit8 from "../images/mens-suit/8.jpg";
+import suit9 from "../images/mens-suit/9.jpg";
+import suit10 from "../images/mens-suit/10.jpg";
+import suit11 from "../images/mens-suit/11.jpg";
+
 const Mens = () => {
   // Images
 
-  const menSuit = [
-    [
-      "https://images.pexels.com/photos/5520327/pexels-photo-5520327.jpeg?auto=compress&cs=tinysrgb&w=600",
-    ],
-    [
-      "https://images.pexels.com/photos/5520289/pexels-photo-5520289.jpeg?auto=compress&cs=tinysrgb&w=600",
-    ],
-    [
-      "https://images.pexels.com/photos/325876/pexels-photo-325876.jpeg?auto=compress&cs=tinysrgb&w=600",
-    ],
-  ];
+  const menSuit = [[suit3], [suit6], [suit9], [suit11]];
 
   const mensAoDai = [[image10], [image11], [image12], [image13]];
 
