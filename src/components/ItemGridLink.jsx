@@ -20,7 +20,7 @@ const ItemGridLink = (props) => {
             <Col key={item.id} xs={12} md={4}>
               <LazyLoadImage
                 src={item.image}
-                alt={item}
+                alt={item.id}
                 className="gridImage"
                 effect="blur"
               />
