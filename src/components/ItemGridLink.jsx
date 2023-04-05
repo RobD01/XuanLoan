@@ -24,8 +24,10 @@ const ItemGridLink = (props) => {
                 className="gridImage"
                 effect="blur"
               />
-              <p className="gridText">
-                {item.text}
+              <div className="gridText">
+                <p>{item.text}</p>
+                <p>$ {item.price}</p>
+
                 <Link to={`/${props.section}/${item.id}`}>
                   <div className="d-grid">
                     <Button
@@ -38,7 +40,7 @@ const ItemGridLink = (props) => {
                     </Button>
                   </div>
                 </Link>
-              </p>
+              </div>
             </Col>
           ))}
         </Row>

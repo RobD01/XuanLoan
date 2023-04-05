@@ -23,10 +23,10 @@ const Mens = () => {
   // Images
 
   const menSuit = [
-    { image: suit3, id: 1 },
-    { image: suit6, id: 2 },
-    { image: suit9, id: 3 },
-    { image: suit11, id: 4 },
+    { image: suit3, id: 1, text: "Waistcoat, Black", price: 20 },
+    { image: suit6, id: 2, text: "Vest, Black, Striped", price: 40 },
+    { image: suit9, id: 3, text: "Vest, Navy Blue", price: 40 },
+    { image: suit11, id: 4, text: "Waistcoat, Beige", price: 20 },
   ];
 
   const mensAoDai = [[image10], [image11], [image12], [image13]];
