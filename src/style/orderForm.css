@@ -1,0 +1,36 @@
+.orderTitle {
+  background-color: var(--gridColor);
+  padding: 2%;
+  box-shadow: var(--shadow);
+  width: 40%;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.orderImage {
+  width: 40%;
+  margin: auto;
+  box-shadow: var(--shadow);
+}
+
+@media (min-width: 760px) and (max-width: 1000px) {
+  .orderTitle {
+    width: 50%;
+  }
+
+  .orderImage {
+    width: 50%;
+  }
+}
+
+@media (max-width: 760px) {
+  .orderTitle {
+    width: 80%;
+  }
+
+  .orderImage {
+    width: 80%;
+  }
+}

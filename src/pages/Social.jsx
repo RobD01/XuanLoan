@@ -1,11 +1,9 @@
 import React from "react";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navigation from "../components/Navbar";
-
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "../style/font.css";
 import "../style/main.css";
+import Paypal from "../components/Paypal";
 
 const Fashion = () => {
   const socialLink = [
@@ -20,9 +18,10 @@ const Fashion = () => {
   ];
 
   return (
-    <div className="container">
+    <div className="container text-center">
       <Navigation />
       <h2 className="text-center">Social Media</h2>
+      <Paypal price="10.00" description="Suit 1" />
 
       {/* social media */}
       <div class="d-flex justify-content-center">

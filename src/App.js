@@ -8,6 +8,7 @@ import Fabrics from "./pages/Fabrics";
 import Kids from "./pages/Kids";
 import Products from "./pages/Products";
 import Social from "./pages/Social";
+import OrderForm from "./components/OrderForm";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="kids" element={<Kids />} />
           <Route path="products" element={<Products />} />
           <Route path="social" element={<Social />} />
+          <Route path=":section/:id" element={<OrderForm />} />
         </Route>
       </Routes>
     </HashRouter>
