@@ -15,7 +15,7 @@ const Mens = () => {
       <h2 className="text-center">Mens Fashion</h2>
 
       {/* Mens Suits */}
-      <ItemGridLink title="Men's Suits" list={menSuit} section="mens" />
+      <ItemGrid title="Men's Suits" list={menSuit} section="mens" />
 
       <ItemGrid title="Men's Ao Dai" list={mensAoDai} />
     </div>
