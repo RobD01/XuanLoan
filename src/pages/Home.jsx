@@ -19,7 +19,9 @@ const Home = () => {
       {/* Title */}
 
       <div className="titleImage"></div>
-      <h2 className="titleText">XL Fashion</h2>
+      <div className="titleText">
+        <p className="titleHeading">Xuan Loan Fashion</p>
+      </div>
 
       {/* Body */}
 

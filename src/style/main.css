@@ -1,7 +1,7 @@
 /* Variables */
 
 :root {
-  --titleImageUrl: url("https://images.pexels.com/photos/1789925/pexels-photo-1789925.jpeg?auto=compress&cs=tinysrgb&w=600");
+  --titleImageUrl: url("../images/Hero.jpg");
   --gridHeight: 250px;
   --shadow: 0 3px 10px rgba(104, 104, 104, 0.3);
   --gridColor: #fde2e4;
@@ -39,25 +39,24 @@
   color: white;
   font-weight: bold;
   border: 3px solid #f1f1f1;
-  position: relative;
-  transform: translate(50%, -150%);
-  width: 50%;
-  padding: 20px;
+  position: absolute;
+  transform: translate(0%, -110%);
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 1rem;
+  max-width: fit-content;
   text-align: center;
+}
+
+.titleHeading {
   font-size: 5rem;
-  font-family: Tangerine;
+  font-family: "Tangerine";
 }
 
-@media (min-width: 760px) and (max-width: 1000px) {
-  .titleText {
-    font-size: 4rem;
-  }
-}
-
-@media (max-width: 760px) {
-  .titleText {
-    font-size: 3rem;
-  }
+.titleSubHeading {
+  font-size: 1.75rem;
+  font-family: "Red Hat Display";
 }
 
 .flexItem {
@@ -81,11 +80,58 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  filter: blur(2px);
+  filter: blur(3px);
   background-image: var(--titleImageUrl);
 }
 
 .navStyle {
   background-color: #fcd5ce;
   box-shadow: var(--shadow);
+}
+
+/* Tablet */
+@media (min-width: 770px) and (max-width: 1000px) {
+  .titleHeading {
+    font-size: 4rem;
+  }
+  .titleSubHeading {
+    font-size: 1.2rem;
+  }
+
+  .titleImage {
+    height: 200px;
+  }
+
+  .merch {
+    width: 50%;
+  }
+}
+
+/* Phone */
+@media (max-width: 770px) {
+  .container {
+    width: 100vw;
+  }
+
+  .titleHeading {
+    font-size: 2.5rem;
+  }
+  .titleSubHeading {
+    font-size: 1.1rem;
+  }
+  .titleText {
+    padding: 5px;
+  }
+
+  .titleImage {
+    height: 170px;
+  }
+
+  .merch {
+    width: 65%;
+  }
+
+  .form {
+    width: 100%;
+  }
 }
