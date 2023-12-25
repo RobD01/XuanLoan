@@ -10,7 +10,6 @@ import { tea, hair, blanket, house, faceMask } from "../services/Products";
 const Products = () => {
   return (
     <div className="container">
-      <Navigation />
       <h2 className="text-center">Products</h2>
 
       {/* Green Oil & Tea Products */}

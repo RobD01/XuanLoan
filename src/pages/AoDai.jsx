@@ -10,7 +10,6 @@ import { aoDai } from "../services/AoDai";
 const AoDai = () => {
   return (
     <div className="container">
-      <Navigation />
       <h2 className="text-center">Women's Fashion</h2>
 
       {/* Ao Dai */}

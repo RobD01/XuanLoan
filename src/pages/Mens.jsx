@@ -11,7 +11,6 @@ import { menSuit, mensAoDai } from "../services/Mens";
 const Mens = () => {
   return (
     <div className="container">
-      <Navigation />
       <h2 className="text-center">Mens Fashion</h2>
 
       {/* Mens Suits */}

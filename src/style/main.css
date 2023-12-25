@@ -14,7 +14,7 @@
   /* border: 3px solid #f1f1f1; */
   padding-top: 10%;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   height: var(--gridHeight);
   box-shadow: var(--shadow);
 }
@@ -22,10 +22,9 @@
 .gridText {
   background-color: var(--gridColor);
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   padding: 2%;
   margin-top: 0.5rem;
-  margin-bottom: 2rem;
   box-shadow: var(--shadow);
 }
 

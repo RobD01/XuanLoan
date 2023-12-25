@@ -14,18 +14,4 @@ export const aoDai = [
   { image: image5 },
   { image: image6 },
   { image: image7 },
-
-  {
-    image:
-      "https://images.pexels.com/photos/899757/pexels-photo-899757.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-
-  {
-    image:
-      "https://images.pexels.com/photos/3218724/pexels-photo-3218724.jpeg?auto=compress&cs=tinysrgb&w=600",
-  },
-  {
-    image:
-      "https://images.pexels.com/photos/11441492/pexels-photo-11441492.png?auto=compress&cs=tinysrgb&w=600",
-  },
 ];

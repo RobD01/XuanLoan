@@ -8,7 +8,6 @@ import SocialComponent from "../components/Social";
 const Social = () => {
   return (
     <div className="container text-center">
-      <Navigation />
       <h2 className="text-center">Social Media</h2>
 
       {/* social media */}

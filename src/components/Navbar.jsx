@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 const Navigation = () => {
   return (
     <>
-      <Navbar sticky="top" expand="lg" className="mt-1 mb-4 mx-auto navStyle">
+      <Navbar sticky="top" expand="lg" className="mt-1 mb-4 mx-4 navStyle">
         <Container>
           <Navbar.Brand href="#">XL Fashion</Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -18,7 +18,6 @@ const Navigation = () => {
               <Nav.Link href="/#/mens">Mens</Nav.Link>
               <Nav.Link href="/#/kids">Kids</Nav.Link>
               <Nav.Link href="/#/products">Products</Nav.Link>
-              <Nav.Link href="/#/social">Social</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>

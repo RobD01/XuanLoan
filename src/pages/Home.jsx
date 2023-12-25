@@ -14,8 +14,6 @@ const gridHeight = "250px";
 const Home = () => {
   return (
     <div className="container">
-      <Navigation />
-
       {/* Title */}
 
       <div className="titleImage"></div>

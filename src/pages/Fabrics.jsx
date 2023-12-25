@@ -11,7 +11,6 @@ import { fabricsAoDai } from "../services/Fabrics";
 const Fabrics = () => {
   return (
     <div className="container">
-      <Navigation />
       <h2 className="text-center">Fabrics</h2>
 
       {/* Fabrics Ao Dai*/}

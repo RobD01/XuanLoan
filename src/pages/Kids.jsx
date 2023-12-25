@@ -9,7 +9,6 @@ import { kidsAoDai, kidsBlanket } from "../services/Kids";
 const Kids = () => {
   return (
     <div className="container">
-      <Navigation />
       <h2 className="text-center">Kids</h2>
 
       {/* Ao Dai */}
