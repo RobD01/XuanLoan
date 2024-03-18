@@ -51,9 +51,6 @@ const Home = () => {
 
       {/* Grid 1, images */}
       <ItemGrid list={body} />
-
-      {/* social media */}
-      <SocialComponent />
     </div>
   );
 };
